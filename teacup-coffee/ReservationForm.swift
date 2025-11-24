@@ -17,6 +17,7 @@ struct ReservationForm: View{
     @State private var phoneNumber = ""
     @State private var userName = ""
     @State private var previewText = ""
+    @State private var vipMembers = 1
     
     
     var body: some View {
@@ -39,22 +40,23 @@ struct ReservationForm: View{
                     Text("Please enter a name.")
                         .textInputAutocapitalization(.words)
                         .foregroundColor(.purple)
-                    Stepper "VIP : \(VIPcount)",value
-                    
-                    if userName.VIP => 0 {
-                        TextField ("Name",text: .specialCode"*userName")
-                            .textInputAutocapitalization(.word)
-                            .foregroundColor(.green)
-                    }
+                }
+                
+                Stepper("VIP members: \(vipMembers)", value: $vipMembers, in: 1 ... 8)
+                
+                if vipMembers >= 3 {
+                    Text("Yo can add up to 3 VIP members")
+                        .foregroundColor(.green)
                 }
                 
                 // use a constant
                 Stepper("Guest: \(guestCount)",value: $guestCount, in:1 ... maxCount)
-                     
+                
             }
+            
             Section{
                 Button("Preview resuervation"){
-                  previewText =
+                    previewText =
                     """
                         Name: \(userName)
                     """
