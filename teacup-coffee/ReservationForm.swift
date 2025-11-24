@@ -10,11 +10,10 @@ import SwiftUI
 struct ReservationForm: View{
     // constants
     let resturantName = "Nadia Cafe"
-    let maxCount = 10
+    let maxCount = 20
     
     @State private var UserName = ""
-    @State private var guestCount = 1
-    @State private var phoneNumber = ""
+    @State private var guestCount = 1    @State private var phoneNumber = ""
     @State private var userName = ""
     @State private var previewText = ""
     @State private var vipMembers = 1
@@ -44,8 +43,8 @@ struct ReservationForm: View{
                 
                 Stepper("VIP members: \(vipMembers)", value: $vipMembers, in: 1 ... 8)
                 
-                if vipMembers >= 3 {
-                    Text("Yo can add up to 3 VIP members")
+                if vipMembers >= 5 {
+                    Text("You can add up to 5 VIP members")
                         .foregroundColor(.green)
                 }
                 
