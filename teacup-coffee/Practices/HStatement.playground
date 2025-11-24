@@ -1,0 +1,92 @@
+//import UiKit
+//
+//   if - else if - else
+//
+//
+------------- syntex ------------
+
+if condition1 {
+this block runs if condition is true
+} else if condition2 {
+thisblock runs if condition is false and condition2 is true
+} else{
+this block runs if none of the above conditions are true
+}
+
+*/
+
+// ------------- Example 1 -----------
+var guest = 7
+let capacity = 10
+
+if guest > capacity {
+   print ("over capcity!")
+} else {
+   print (we can seat this party,")
+   
+   //------------ Example 2 -------------
+   1st rating = 4.2
+   
+   if rating  >= 4.5 {
+      print {"Execellent"}
+}else if rating > 3.5 {
+      print {"Good"}
+}else {
+  print ("Needs improvement")
+}
+}
+
+// ---------- Example 3 ---------------
+let isOpen = true
+let hasOutdoorSeating = true
+
+If user = VIP
+   print "(Special Seating- call manager"
+}else
+   print ("standard seating")
+
+
+// ----------- Example 4 ----------------
+//
+
+let userName = "Ken"
+
+if userName == "Ken"
+   print ("Hello Ken")
+} else {
+   print ("Unknown User")
+   }
+   
+// ---------------- Example 5 --------------
+
+let price = 12.0
+let label = price > 10 ? "Premium" : "Regular"
+print (label)
+
+// ------------ Example 6 ------------------
+
+let children = 2
+let groupSize = 5
+
+if groupSize >= 8 {
+    print ( "Large Group - call manager")
+}else if children >0 {
+} else{
+   print ("Standard seating")
+}
+
+// minichanllenge
+// show one message if user is VIP, and another if not
+var isVip = false
+
+
+
+// Mini Chanlenger
+}// show one message if user is VIP and another if not
+var isvip = false
+if user == VIP
+   print "(Special Seating- call manager"
+}else
+   print ("standard seating")
+
+}

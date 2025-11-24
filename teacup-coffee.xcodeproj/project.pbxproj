@@ -10,9 +10,22 @@
 		CC6D5A642ED251E50056D516 /* teacup-coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "teacup-coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CC6D5A762ED253260056D516 /* Exceptions for "teacup-coffee" folder in "teacup-coffee" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Untitled.swift,
+			);
+			target = CC6D5A632ED251E50056D516 /* teacup-coffee */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CC6D5A662ED251E50056D516 /* teacup-coffee */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CC6D5A762ED253260056D516 /* Exceptions for "teacup-coffee" folder in "teacup-coffee" target */,
+			);
 			path = "teacup-coffee";
 			sourceTree = "<group>";
 		};
